@@ -49,8 +49,9 @@ export default function HomeScreen() {
   const renderOptions: FC = () => {
     return (
       <View style={styles.optionContainer}>
-        {exercises[execiseNumber]?.options.map((op: string, index: Number) => (
+        {exercises[execiseNumber]?.options.map((op: string, index: number) => (
           <Option
+            key={index}
             text={op}
             selectedOption={selectedOption}
             setSelectedOption={setSelectedOption}

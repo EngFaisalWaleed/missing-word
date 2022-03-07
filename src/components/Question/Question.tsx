@@ -8,8 +8,8 @@ const Question: FC<{
   resultText: string;
 }> = ({ question, selectedOption, resultText }) => (
   <View style={styles.questionContainer}>
-    {question?.split(" ").map((q: String, index: Number) => (
-      <TouchableOpacity>
+    {question?.split(" ").map((q: String, index: number) => (
+      <TouchableOpacity key={index}>
         {q.includes("__") && selectedOption ? (
           <Text
             style={[

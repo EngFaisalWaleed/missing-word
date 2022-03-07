@@ -4,8 +4,10 @@ import { styles } from "./PhraseStyles";
 const Phrase: FC<{ phrase: string }> = ({ phrase }) => {
   return (
     <View style={styles.sentenceContainer}>
-      {phrase?.split(" ").map((word: String, index: Number) => (
-        <Text style={styles.sentence}>{word}</Text>
+      {phrase?.split(" ").map((word: String, index: number) => (
+        <Text key={index} style={styles.sentence}>
+          {word}
+        </Text>
       ))}
     </View>
   );
