@@ -25,13 +25,13 @@ cd missing-word
 ```
 
 - Node version
-  v16
+  v16.14.0
 
 - Install Node version using NVM
 
 ```
-nvm install v16
-nvm use v16
+nvm install v16.14.0
+nvm use v16.14.0
 ```
 
 - Install Expo Cli
@@ -74,3 +74,7 @@ It will run the metro server and display a QR code. Scan the QR code in expo app
 - User can check the answer by selecting one of the four options given
 - User can continue to the next exercise without having to respond to current exercise by pressing continue button
 - User can de-select the selected option by touching anywhere on screen where there is no content
+
+# Note:
+
+- Your mobile device and computer should be connected to same network in order to run app on expo
